@@ -26,7 +26,7 @@ if SERVER then
   AddCSLuaFile("phistory/phistory_config.lua")
   AddCSLuaFile("phistory/cl_phistory.lua")
 
-  /* VGUI elements */
+  -- VGUI elements --
   -- View TODO #39
   AddCSLuaFile("phistory/vgui/phistorytextinput.lua")
   AddCSLuaFile("phistory/vgui/phistoryplayerrow.lua")
@@ -40,8 +40,8 @@ if CLIENT then
   include("phistory/phistory_config.lua")
   include("phistory/cl_phistory.lua")
 
-  /* VGUI elements */
-  -- TODO: Move this to a foor loop so I don't have to put each file here manually
+  -- VGUI elements --
+  -- TODO: Move this to a for loop so I don't have to put each file here manually
   include("phistory/vgui/phistorytextinput.lua")
   include("phistory/vgui/phistoryplayerrow.lua")
   include("phistory/vgui/phistorybutton.lua")

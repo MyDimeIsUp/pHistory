@@ -1,9 +1,9 @@
 pHistory.Data = pHistory.Data or {}
 
-/*
- * sql.SQLStr is used to sanitize the strings until prepared SQL statements are a thing
- * thanks to @Multithreaded Lua for finally posting a suggestion on gmod requests
- */
+--[[
+  sql.SQLStr is used to sanitize the strings until prepared SQL statements are a thing
+  thanks to @Multithreaded Lua for finally posting a suggestion on gmod requests
+]]
 
 function pHistory.Data:Startup()
   if !sql.TableExists("pHistory_punishments") then
@@ -70,9 +70,9 @@ function pHistory.Data:GetFullPlayerHistory(admin, sSteamId64, fPostQuery)
   fPostQuery(punishments, notes)
 end
 
-/*
- * Fetches the row of a note with the specified unique ID, referencing the primary key of each note
- */
+--[[
+  Fetches the row of a note with the specified unique ID, referencing the primary key of each note
+]]
 function pHistory.Data:GetNoteByID(admin, iNoteId, fPostQuery)
   if !pHistory.Config.allowedGroups[admin:GetUserGroup()] then return false end
 
@@ -81,10 +81,10 @@ function pHistory.Data:GetNoteByID(admin, iNoteId, fPostQuery)
   fPostQuery(note)
 end
 
-/*
- * Update's the note entry by its unique ID
- * Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
- */
+--[[
+  Update's the note entry by its unique ID
+  Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
+]]
 function pHistory.Data:ModifyNote(admin, iNoteId, sNoteEntry, fPostQuery)
   if !pHistory.Config.allowedGroups[admin:GetUserGroup()] then return false end
 
@@ -93,10 +93,10 @@ function pHistory.Data:ModifyNote(admin, iNoteId, sNoteEntry, fPostQuery)
   fPostQuery()
 end
 
-/*
- * Removes the note entry by its unique ID
- * Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
- */
+--[[
+  Removes the note entry by its unique ID
+  Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
+]]
 function pHistory.Data:DeleteNote(admin, iNoteId, fPostQuery)
   if !pHistory.Config.canDeleteEditNotes[admin:GetUserGroup()] then return false end
 

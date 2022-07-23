@@ -2,10 +2,10 @@ pHistory.Data = pHistory.Data or {}
 
 require("mysqloo")
 
-/*
- * WARNING: DO NOT TOUCH BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!
- * Requires mysqloo. Suports tmysql4 if wrapper is used. If you use tmysql4, your should get MySQLoo
- */
+--[[
+  WARNING: DO NOT TOUCH BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!
+  Requires mysqloo. Suports tmysql4 if wrapper is used. If you use tmysql4, your should get MySQLoo
+]]
 
 local pDBInfo = pHistory.Config.mysql
 local pDB = mysqloo.connect(pDBInfo.address, pDBInfo.user, pDBInfo.password, pDBInfo.table, 3306)
@@ -147,11 +147,11 @@ function pHistory.Data:GetFullPlayerHistory(admin, sSteamId64, fPostQuery)
 end
 
 
-/*
- * TODO: DO this
- * do punishmentHistory
- * break
- */
+--[[
+  TODO: DO this
+  do punishmentHistory
+  break
+]]
 
  function pHistory.Data:GetNoteByID(admin, iNoteId, fPostQuery)
    if !pHistory.Config.allowedGroups[admin:GetUserGroup()] then return false end
@@ -171,10 +171,10 @@ end
    getNoteQuery:start()
  end
 
-/*
- * Update's the note entry by its unique ID
- * Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
- */
+--[[
+  Update's the note entry by its unique ID
+  Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
+]]
 function pHistory.Data:ModifyNote(admin, iNoteId, sNoteEntry, fPostQuery)
   if !pHistory.Config.allowedGroups[admin:GetUserGroup()] then return false end
 
@@ -194,10 +194,10 @@ function pHistory.Data:ModifyNote(admin, iNoteId, sNoteEntry, fPostQuery)
   updateNoteQuery:start()
 end
 
-/*
- * Removes the note entry by its unique ID
- * Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
- */
+--[[
+  Removes the note entry by its unique ID
+  Check for permission was already performed in the serverside net.Recieve method. Lets not have to query the SQL database again
+]]
 function pHistory.Data:DeleteNote(admin, iNoteId, fPostQuery)
   if !pHistory.Config.canDeleteEditNotes[admin:GetUserGroup()] then return false end
 

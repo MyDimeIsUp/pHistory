@@ -4,9 +4,9 @@ local commandTypeLogging = {} -- Commands are stored in here with their function
 -- There is no way to override the fancylog to show the reason in chat message but its better then
 -- overwriting the ULX command.
 
-/*
- * Accessory functions
- */
+--[[
+  Accessory functions
+]]
 commandTypeLogging["slay"] = function(admin, args)
   local sReason = "N/A"
   local tTargets = ULib.getUsers(args[1], true, admin) -- Table of everyone who is targeted with this command
@@ -129,9 +129,9 @@ commandTypeLogging["mute"] = function(admin, args)
   end
 end
 
-/*
- * Administration commands (kick/ban)
- */
+--[[
+  Administration commands (kick/ban)
+]]
  commandTypeLogging["kick"] = function(admin, args)
    local sReason = "N/A"
    local tTargets = ULib.getUsers(args[1], true, admin) -- Table of everyone who is targeted with this command
