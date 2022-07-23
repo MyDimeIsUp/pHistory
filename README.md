@@ -47,8 +47,6 @@ Installation is easy! Once the addon has been downloaded, drag the `pHistory` fo
 
 `pHistory.Config.allowedGroups`: Which ranks have access to the menu. Access to the menu allows them to open the menu, search a player's history and make notes. The following format should be followed for adding a new rank:
 
-`["GroupNameHere"] = true,`: Set the server name which appears in the menu 
-
 `pHistory.Config.canDeleteEditNotes`:  Which ranks can delete notes not made by them. By  default, only staff members can modify/delete their own notes. Ranks in this usergroup can modify/delete notes not made by them.
 
 # Developer Integration
