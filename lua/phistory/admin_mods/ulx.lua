@@ -8,7 +8,6 @@ local commandTypeLogging = {} -- Commands are stored in here with their function
  * Accessory functions
  */
 commandTypeLogging["slay"] = function(admin, args)
-  print("run1")
   local sReason = "N/A"
   local tTargets = ULib.getUsers(args[1], true, admin) -- Table of everyone who is targeted with this command
 
@@ -107,7 +106,6 @@ commandTypeLogging["gag"] = function(admin, args)
 end
 
 commandTypeLogging["mute"] = function(admin, args)
-  print "run12"
   local sReason = "N/A"
   local tTargets = ULib.getUsers(args[1], true, admin) -- Table of everyone who is targeted with this command
 
@@ -137,8 +135,6 @@ end
  commandTypeLogging["kick"] = function(admin, args)
    local sReason = "N/A"
    local tTargets = ULib.getUsers(args[1], true, admin) -- Table of everyone who is targeted with this command
-
-   PrintTable(args)
 
    for k, v in ipairs(args) do
      if k <= 1 then continue end -- Everything past the 1st index is part of the reason
