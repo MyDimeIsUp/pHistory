@@ -3,6 +3,16 @@
 
 # pHistory
  
+ <details>
+  <summary>Screenshots</summary>
+
+  ![8bced4e1bab48bda68b6d226458c6254](https://user-images.githubusercontent.com/8619739/180586680-0777ab13-b2ba-401b-91a0-981d93673579.png)
+  ![0aa883ad1dc30482b69a32a737c0e647](https://user-images.githubusercontent.com/8619739/180586683-344bfc04-bb05-4186-a4dd-a5b93870e6e3.png)
+  ![b9436a631631fcd589e3ae56790c49f1](https://user-images.githubusercontent.com/8619739/180586689-e766fb98-fe99-4037-8c76-89d7797a9dc3.png)
+  ![0add7d2eff50eac7a68a1213bc191d83](https://user-images.githubusercontent.com/8619739/180586694-5bb4c041-0f00-472d-b279-e3b1c6352906.png)
+  ![44e4fa50012bc3bf3c28a92d8e299182](https://user-images.githubusercontent.com/8619739/180586698-1b3dd11e-42c5-45cb-98e4-e7ab50ade004.png)
+</details>
+ 
 pHistory allows you to view all punishment history of a player. Need to know whether to ban them for their 2nd offense of something? Do they have a history of spamming chat, being toxic, or loopholing? Now you know. You can also leave notes about a player's behavior, whether they are helpful and assistive or a pain the the rear-end, its all here for you and your staff team.
 
 ## Features:
