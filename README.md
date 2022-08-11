@@ -39,9 +39,9 @@ pHistory allows you to view all punishment history of a player. Need to know whe
 # Installation
 Installation is easy! Once the addon has been downloaded, drag the `pHistory` folder into your addons folder. Then, navigate to `addons/pHistory/lua/phistory/phistory_config.lua` and edit to your liking. Listed below are the essentials for getting pHistory setup for your server.
 
-`pHistory.Config.logType`: Where to log punishments and notes. Currently local storage is supported. MySQL will come soon with a website release
+`pHistory.Config.logType`: Where to log punishments and notes. Currently local storage and MySQL are supported. For MySQL to work, you must have MySQLOO module installed on your gmod server.
 
-`pHistory.Config.chatCommand`: The chat message that staff members must enter to open the menu
+`pHistory.Config.chatCommand`: The chat message that staff members must enter to open the menu.
 
 `pHistory.Config.adminMod`: The admin mod you are currently using. Only ULX supported right now. FAdmin and ServerGuard support in the future
 
