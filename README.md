@@ -43,9 +43,9 @@ Installation is easy! Once the addon has been downloaded, drag the `pHistory` fo
 
 `pHistory.Config.chatCommand`: The chat message that staff members must enter to open the menu.
 
-`pHistory.Config.adminMod`: The admin mod you are currently using. Only ULX supported right now. FAdmin and ServerGuard support in the future
+`pHistory.Config.adminMod`: The admin mod you are currently using. Only ULX supported right now. FAdmin and ServerGuard support in the future.
 
-`pHistory.Config.allowedGroups`: Which ranks have access to the menu. Access to the menu allows them to open the menu, search a player's history and make notes. The following format should be followed for adding a new rank:
+`pHistory.Config.allowedGroups`: Which ranks have access to the menu. Access to the menu allows them to open the menu, search a player's history and make notes.
 
 `pHistory.Config.canDeleteEditNotes`:  Which ranks can delete notes not made by them. By  default, only staff members can modify/delete their own notes. Ranks in this usergroup can modify/delete notes not made by them.
 
