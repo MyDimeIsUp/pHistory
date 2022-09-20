@@ -9,8 +9,8 @@ pHistory.Config.chatCommand = "!phistory" -- What is the command that opens the 
 ]]
 pHistory.Config.mysql = pHistory.Config.mysql or {}
 pHistory.Config.mysql.address = "192.168.1.178" -- IP address of server
-pHistory.Config.mysql.user = "TrueKnife" -- Username
-pHistory.Config.mysql.password = "dcz*NTpE&8mQ4dj" -- Password
+pHistory.Config.mysql.user = "user" -- Username
+pHistory.Config.mysql.password = "pass" -- Password
 pHistory.Config.mysql.table = "phistory_logging" -- Create your database named "phistory_logging" in phpMyAdmin or your preferred MySQL interfacing
 pHistory.Config.mysql.port = 3306 -- Do not edit unless you know you've changed your default MySQL port
 
